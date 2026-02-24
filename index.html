@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IS ROMANCE BREWING? Reclusive Silverchair Rocker Daniel Johns Spotted Cheering On Jade Thirlwall | Daily Mail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #cc0000;
+      --dark-red: #990000;
+      --black: #1a1a1a;
+      --grey: #666;
+      --light-grey: #f2f2f2;
+      --border: #e0e0e0;
+      --white: #fff;
+    }
+
+    body { font-family: 'Source Sans 3', sans-serif; background: #f0f0f0; color: var(--black); font-size: 15px; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    a:hover { color: var(--red); }
+
+    /* ─── TOP BAR ─── */
+    .top-bar { background: #111; color: #bbb; font-size: 11px; text-align: center; padding: 5px 0; }
+    .top-bar b { color: var(--red); }
+
+    /* ─── HEADER ─── */
+    header { background: var(--white); border-bottom: 4px solid var(--red); }
+    .header-inner { max-width: 1260px; margin: 0 auto; padding: 12px 16px 0; }
+    .header-row { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 10px; }
+    .logo { font-family: 'Playfair Display', serif; font-size: 46px; font-weight: 900; color: var(--red); text-transform: uppercase; letter-spacing: -1px; line-height: 1; }
+    .logo small { font-size: 12px; font-weight: 700; color: #555; display: block; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; }
+    .header-right { text-align: right; font-size: 11px; color: #777; }
+    .header-right strong { display: block; font-size: 12px; color: var(--black); margin-bottom: 2px; }
+    .header-ad { background: var(--light-grey); border: 1px solid var(--border); height: 56px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #bbb; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+
+    /* ─── NAV ─── */
+    nav { background: #111; }
+    .nav-scroll { max-width: 1260px; margin: 0 auto; padding: 0 16px; display: flex; overflow-x: auto; scrollbar-width: none; }
+    .nav-scroll::-webkit-scrollbar { display: none; }
+    nav a { color: #fff; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; padding: 9px 12px; white-space: nowrap; display: block; border-right: 1px solid #2a2a2a; transition: background .15s; }
+    nav a.active, nav a:hover { background: var(--red); }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb { background: var(--white); border-bottom: 1px solid var(--border); }
+    .breadcrumb-inner { max-width: 1260px; margin: 0 auto; padding: 7px 16px; font-size: 11px; color: #888; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+    .breadcrumb-inner a { color: var(--red); font-weight: 700; text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; }
+    .breadcrumb-inner span { color: #ccc; }
+
+    /* ─── PAGE LAYOUT ─── */
+    .page { max-width: 1260px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 1fr 308px; gap: 20px; }
+
+    /* ─── ARTICLE ─── */
+    article { background: var(--white); padding: 20px 24px 32px; }
+
+    .section-label { font-size: 11px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; display: flex; gap: 8px; align-items: center; }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    h1.article-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--black);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    h1.article-headline .kicker {
+      color: var(--red);
+    }
+
+    .standfirst {
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic;
+      color: #444;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Byline bar */
+    .byline-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+      font-size: 12px;
+    }
+    .byline-info { flex: 1; }
+    .byline-name { font-weight: 700; color: var(--black); font-size: 13px; }
+    .byline-meta { color: #888; font-size: 11px; margin-top: 2px; }
+    .byline-meta .updated { color: var(--red); font-weight: 700; }
+
+    .share-bar { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 12px; font-size: 11px; font-weight: 700;
+      border: none; cursor: pointer; color: white;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .share-btn.fb { background: #1877f2; }
+    .share-btn.tw { background: #000; }
+    .share-btn.em { background: #888; }
+
+    /* Hero image */
+    .hero-img {
+      width: 100%; aspect-ratio: 16/9;
+      background: linear-gradient(145deg, #c0c0c0 0%, #808080 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: #666; letter-spacing: 1px; text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .img-caption {
+      font-size: 12px; color: #777; padding: 6px 0 16px;
+      line-height: 1.45; border-bottom: 1px solid var(--border); margin-bottom: 18px;
+    }
+    .img-caption b { color: var(--black); font-weight: 600; }
+
+    /* Key points box */
+    .key-points {
+      background: #fff8f8; border: 1px solid #f0d0d0;
+      border-left: 4px solid var(--red); padding: 14px 16px; margin-bottom: 22px;
+    }
+    .key-points-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--red); margin-bottom: 10px; }
+    .key-points ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .key-points li { font-size: 13px; color: #333; padding-left: 16px; position: relative; line-height: 1.4; }
+    .key-points li::before { content: '▶'; font-size: 8px; color: var(--red); position: absolute; left: 0; top: 4px; }
+
+    /* Body text */
+    .article-body { font-size: 16px; line-height: 1.75; color: #222; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body p.intro::first-letter {
+      font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 900;
+      float: left; line-height: 0.8; margin: 10px 8px 0 0; color: var(--red);
+    }
+
+    /* Section subheads */
+    .article-body h2 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--black);
+      background: var(--light-grey);
+      border-left: 4px solid var(--red);
+      padding: 8px 12px;
+      margin: 24px 0 14px;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      border-top: 3px solid var(--black); border-bottom: 3px solid var(--black);
+      padding: 16px 0; margin: 26px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 22px; font-style: italic; font-weight: 700;
+      color: var(--black); line-height: 1.35;
+    }
+    .pull-quote cite {
+      display: block; font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px; font-style: normal; font-weight: 700;
+      color: var(--red); text-transform: uppercase; letter-spacing: 1px; margin-top: 10px;
+    }
+
+    /* Inline image */
+    .inline-img-wrap { margin: 22px 0; }
+    .inline-img {
+      width: 100%; aspect-ratio: 3/2;
+      background: linear-gradient(145deg, #c5c5c5 0%, #909090 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: #777; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .inline-caption { font-size: 12px; color: #888; padding: 5px 0 0; line-height: 1.4; }
+
+    /* Ad slot */
+    .ad-slot {
+      background: var(--light-grey); border: 1px solid var(--border);
+      height: 250px; display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: #bbb; text-transform: uppercase; letter-spacing: 2px;
+      margin: 26px 0;
+    }
+
+    /* Tip-off box */
+    .tipoff {
+      background: #f9f9f9; border: 1px solid var(--border);
+      padding: 12px 14px; margin-top: 24px;
+      font-size: 13px; color: #555; border-left: 3px solid #ccc;
+    }
+    .tipoff a { color: var(--red); font-weight: 700; }
+
+    /* Tags */
+    .tags-section { margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .tags-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 8px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      background: var(--light-grey); color: var(--black);
+      font-size: 11px; font-weight: 600; padding: 4px 10px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      border: 1px solid var(--border); cursor: pointer;
+    }
+    .tag:hover { background: var(--red); color: white; border-color: var(--red); }
+
+    /* Comments strip */
+    .comments-strip {
+      margin-top: 20px; background: var(--black); color: white;
+      padding: 12px 16px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .comments-strip .count { font-size: 18px; font-weight: 700; }
+    .comments-strip .count span { color: var(--red); }
+    .comments-strip .view-btn {
+      background: var(--red); color: white; border: none;
+      padding: 8px 18px; font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px; cursor: pointer;
+    }
+    .comments-strip .view-btn:hover { background: var(--dark-red); }
+
+    /* ─── SIDEBAR ─── */
+    .sidebar-module { background: var(--white); margin-bottom: 16px; overflow: hidden; }
+    .sidebar-header { background: var(--black); color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 8px 12px; }
+    .sidebar-header.red { background: var(--red); }
+
+    .sidebar-item { display: flex; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background .15s; }
+    .sidebar-item:last-child { border-bottom: none; }
+    .sidebar-item:hover { background: #fafafa; }
+    .sidebar-thumb { width: 80px; flex-shrink: 0; aspect-ratio: 4/3; background: linear-gradient(135deg, #ccc, #aaa); }
+    .sidebar-item-hed { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; line-height: 1.3; color: var(--black); }
+    .sidebar-item-hed:hover { color: var(--red); }
+    .sidebar-item-meta { font-size: 10px; color: #aaa; margin-top: 4px; }
+    .sidebar-item-meta .cmt { color: var(--red); font-weight: 700; }
+
+    .sidebar-ad { background: var(--light-grey); border: 1px solid var(--border); height: 250px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #bbb; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+
+    /* Poll */
+    .poll-body { padding: 12px; }
+    .poll-q { font-size: 13px; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
+    .poll-opt { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; font-size: 13px; cursor: pointer; }
+    .poll-opt input { accent-color: var(--red); }
+    .poll-vote-btn { width: 100%; background: var(--red); color: white; border: none; padding: 8px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; margin-top: 4px; }
+    .poll-vote-btn:hover { background: var(--dark-red); }
+
+    /* ─── FOOTER ─── */
+    footer { background: #111; color: #888; padding: 30px 0 20px; margin-top: 20px; }
+    .footer-inner { max-width: 1260px; margin: 0 auto; padding: 0 16px; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 900; color: var(--red); text-transform: uppercase; margin-bottom: 14px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 5px 16px; font-size: 11px; margin-bottom: 18px; }
+    .footer-links a { color: #888; }
+    .footer-links a:hover { color: white; }
+    .footer-copy { font-size: 10px; color: #555; border-top: 1px solid #2a2a2a; padding-top: 14px; line-height: 1.8; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .page { grid-template-columns: 1fr; }
+      h1.article-headline { font-size: 24px; }
+    }
+    @media (max-width: 580px) {
+      article { padding: 14px; }
+      h1.article-headline { font-size: 20px; }
+      .standfirst { font-size: 14px; }
+      .article-body { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar"><b>EXCLUSIVE:</b> Daniel Johns spotted at Jade Thirlwall's Chicago show — fans are losing their minds</div>
+
+<header>
+  <div class="header-inner">
+    <div class="header-row">
+      <div>
+        <div class="logo">Daily Mail <small>The UK's Best-Selling Newspaper Website</small></div>
+      </div>
+      <div class="header-right">
+        <strong>Tuesday, 24 February 2026</strong>
+        ☁ London 9°C &nbsp;|&nbsp; Sydney 27°C
+      </div>
+    </div>
+    <div class="header-ad">Advertisement</div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-scroll">
+    <a href="#">News</a>
+    <a href="#" class="active">Showbiz</a>
+    <a href="#">Sport</a>
+    <a href="#">Femail</a>
+    <a href="#">Health</a>
+    <a href="#">Science</a>
+    <a href="#">Money</a>
+    <a href="#">Travel</a>
+    <a href="#">Music</a>
+    <a href="#">TV&amp;Showbiz</a>
+    <a href="#">Celebrity</a>
+    <a href="#">Royal Family</a>
+    <a href="#">Australia</a>
+    <a href="#">Video</a>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="#">Home</a><span>›</span>
+    <a href="#">Showbiz</a><span>›</span>
+    <a href="#">Music</a><span>›</span>
+    Daniel Johns &amp; Jade Thirlwall
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- ═══ ARTICLE ═══ -->
+  <article>
+
+    <div class="section-label">Showbiz &amp; Music</div>
+
+    <h1 class="article-headline">
+      <span class="kicker">IS ROMANCE BREWING?</span> Reclusive Silverchair Rocker Daniel Johns Spotted Cheering On Little Mix's Jade Thirlwall At Her Sold-Out Chicago Show — And Fans Are LOSING Their Minds
+    </h1>
+
+    <div class="standfirst">The Australian rock icon, 44, who has largely shunned the spotlight for years, was allegedly seen at the Angel of My Life singer's solo tour stop — sparking frenzied speculation online</div>
+
+    <div class="byline-bar">
+      <div class="byline-info">
+        <div class="byline-name">By Daily Mail Reporter</div>
+        <div class="byline-meta">
+          Published: <time>24 February 2026</time>
+          &nbsp;|&nbsp;
+          <span class="updated">e-mail</span>
+        </div>
+      </div>
+      <div class="share-bar">
+        <button class="share-btn fb">f &nbsp; Share</button>
+        <button class="share-btn tw">𝕏 &nbsp; Share</button>
+        <button class="share-btn em">✉ &nbsp; Share</button>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="hero-img">Photograph</div>
+    <div class="img-caption"><b>Unexpected night out:</b> Daniel Johns, 44, was allegedly spotted at Jade Thirlwall's sold-out show at the United Center in Chicago on Saturday — sending fans into a frenzy online. <i>(File photos)</i></div>
+
+    <!-- KEY POINTS BOX -->
+    <div class="key-points">
+      <div class="key-points-title">Key Points</div>
+      <ul>
+        <li>Silverchair frontman Daniel Johns, 44, allegedly spotted at Jade Thirlwall's Chicago concert</li>
+        <li>Eyewitness post on X racked up over 200,000 likes, sending hashtag #DanielAndJade trending</li>
+        <li>Both stars are currently unattached — Johns divorced Natalie Imbruglia in 2008; Thirlwall recently split from Jordan Stephens</li>
+        <li>Sources say the pair have 'mutual friends in the music industry' and have been 'in each other's orbit'</li>
+        <li>Representatives for both stars had not responded to requests for comment at time of publication</li>
+      </ul>
+    </div>
+
+    <!-- BODY -->
+    <div class="article-body">
+
+      <p class="intro">He has spent years carefully guarding his privacy, rarely venturing into the public eye — but now Daniel Johns has been spotted somewhere nobody expected: the front row of Jade Thirlwall's sold-out Chicago concert.</p>
+
+      <p>The reclusive Silverchair frontman, 44, was allegedly seen at the former Little Mix star's dazzling show at the United Center on Saturday night, sending fans into an absolute frenzy online.</p>
+
+      <p>Eagle-eyed concertgoers claim they spotted the enigmatic Australian rocker looking relaxed and — sources say — seemingly transfixed by the 33-year-old pop sensation's electrifying performance.</p>
+
+      <p>And now the internet is doing what the internet does best: <strong>ABSOLUTELY SPIRALLING.</strong></p>
+
+      <h2>'He Looked Completely Smitten'</h2>
+
+      <p>'He was just standing there watching her with this massive smile on his face,' one alleged eyewitness told fans on X, formerly Twitter, in a post that has since racked up over 200,000 likes. 'He looked completely smitten. I couldn't believe it was actually him.'</p>
+
+      <p>The post sent shockwaves through both the Little Mix fandom and the Silverchair faithful, with the hashtag #DanielAndJade trending within hours.</p>
+
+      <p>While neither camp has confirmed nor denied the sighting, that has done precisely nothing to dampen the speculation — if anything, it has only poured petrol on an already roaring fire.</p>
+
+      <div class="inline-img-wrap">
+        <div class="inline-img">Photograph — Jade Thirlwall on stage, United Center, Chicago</div>
+        <div class="inline-caption">Jade Thirlwall has been wowing crowds across North America on her first ever headlining tour, with the Chicago show described by fans as 'absolutely unreal.'</div>
+      </div>
+
+      <h2>A Very Unexpected Pairing — And Two Very Newly Single People</h2>
+
+      <p>On the surface, Daniel Johns and Jade Thirlwall couldn't appear more different. He is the tortured genius behind <em>Tomorrow</em> and <em>Ana's Song</em>, a man who once defined an era of raw, angsty Australian rock before retreating almost entirely from public life. She is bubbly, bold, and utterly fearless — a pop powerhouse who has spent the past year launching a glittering solo career after Little Mix went on hiatus.</p>
+
+      <p>And yet, if the rumour mill is to be believed, opposites may be attracting in the most spectacular fashion.</p>
+
+      <p>Crucially — and the internet has not missed this for even one second — both are currently unattached.</p>
+
+      <p>Daniel famously divorced Australian pop icon Natalie Imbruglia in 2008 after just two years of marriage, a split that sent shockwaves through the music world and marked the beginning of his long withdrawal from public life. He has not been publicly linked to anyone in years.</p>
+
+      <p>Jade, meanwhile, is said to have recently parted ways with Rizzle Kicks star Jordan Stephens, her boyfriend of several years. The split — understood to have been amicable — has not been officially confirmed by either party, but those close to the former couple say the romance has run its course.</p>
+
+      <div class="pull-quote">
+        'Two musicians. Two heartbreaks. One sold-out arena in Chicago. You genuinely could not write it.'
+        <cite>— Daily Mail Reporter</cite>
+      </div>
+
+      <p>Sources close to the situation — who asked not to be named — told the <em>Daily Mail</em> that the pair are said to have 'mutual friends in the music industry' and have allegedly been 'in each other's orbit for some time.'</p>
+
+      <p>We reached out to representatives for both Daniel Johns and Jade Thirlwall. Neither has responded to requests for comment at the time of publication.</p>
+
+      <div class="ad-slot">Advertisement</div>
+
+      <h2>Daniel's Rare Return To The Spotlight</h2>
+
+      <p>Perhaps just as remarkable as any potential romance is the simple fact that Daniel Johns was there at all.</p>
+
+      <p>The Newcastle-born musician has made headlines in recent years largely for his absence from public life, navigating well-documented personal struggles with health and wellbeing. His appearances at public events have been vanishingly rare, making Saturday night's alleged outing all the more astonishing to his devoted fanbase.</p>
+
+      <p>'I genuinely cannot remember the last time Daniel was spotted at a concert,' wrote one Silverchair fan on Reddit. 'This is HUGE. Whatever is going on, something has clearly changed for him and honestly I'm just happy he seems to be doing well.'</p>
+
+      <p>Others were quick to point out that being spotted at a Jade Thirlwall concert specifically — all dazzling lights, soaring pop hooks, and thousands of screaming fans — represents quite the departure for a man who once wrote albums about existential dread in the Australian suburbs.</p>
+
+      <div class="inline-img-wrap">
+        <div class="inline-img" style="background:linear-gradient(145deg,#b0b0b0,#787878)">Photograph — Daniel Johns</div>
+        <div class="inline-caption">Daniel Johns rose to global fame as the frontman of Silverchair in the 1990s but has largely withdrawn from public life in recent years.</div>
+      </div>
+
+      <h2>Jade's Chicago Triumph</h2>
+
+      <p>Jade herself appears blissfully unaware — or gloriously unbothered — by the furore engulfing social media, having delivered what critics are calling one of the standout live shows of 2026 so far.</p>
+
+      <p>The Sunderland-born star, who released her debut solo album to widespread acclaim last year, has been wowing crowds across North America on her first ever headlining tour.</p>
+
+      <p>Fans at the Chicago show described the set as 'absolutely unreal,' with Jade performing for nearly two hours in a jaw-dropping sequence of costume changes, elaborate choreography and the kind of raw vocal performances that have made her one of the most exciting artists working in pop today.</p>
+
+      <p>If Daniel Johns was indeed in the building, he picked quite the night to show up.</p>
+
+      <h2>The Internet Reacts</h2>
+
+      <p>The reaction online has, predictably, been nothing short of chaotic.</p>
+
+      <p>'Daniel Johns watching Jade Thirlwall perform is the crossover I never knew I needed but apparently the universe decided to gift us anyway,' wrote one fan, summing up the general mood perfectly.</p>
+
+      <p>Another posted: 'If this turns out to be real I will simply never recover.'</p>
+
+      <p>A third added, with characteristic internet logic: 'They're both incredibly talented, deeply cool, and have great hair. This tracks completely actually.'</p>
+
+      <p>Whether there is any truth to the rumours — of a romance, a friendship, or simply a chance encounter at a spectacular pop concert — remains to be seen. But one thing is certain: the world is very much watching.</p>
+
+      <p><em>Representatives for Daniel Johns and Jade Thirlwall had not responded to requests for comment at the time of publication.</em></p>
+
+      <div class="tipoff">📧 <strong>Do you have a story?</strong> Contact us at <a href="mailto:tips@dailymail.com">tips@dailymail.com</a></div>
+
+    </div>
+
+    <!-- TAGS -->
+    <div class="tags-section">
+      <div class="tags-label">Topics</div>
+      <div class="tags">
+        <div class="tag">Daniel Johns</div>
+        <div class="tag">Jade Thirlwall</div>
+        <div class="tag">Silverchair</div>
+        <div class="tag">Little Mix</div>
+        <div class="tag">Celebrity Romance</div>
+        <div class="tag">Music News</div>
+        <div class="tag">Concert</div>
+        <div class="tag">Australia</div>
+      </div>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comments-strip">
+      <div class="count"><span>3,847</span> Comments</div>
+      <button class="view-btn">View Comments</button>
+    </div>
+
+  </article>
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside>
+
+    <div class="sidebar-ad">Advertisement</div>
+
+    <!-- MOST READ -->
+    <div class="sidebar-module">
+      <div class="sidebar-header">Most Read</div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb"></div>
+        <div>
+          <div class="sidebar-item-hed">1. Man charged over disappearance of woman whose case gripped the nation for two years</div>
+          <div class="sidebar-item-meta"><span class="cmt">▶ 9,120 comments</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#ccc,#aaa)"></div>
+        <div>
+          <div class="sidebar-item-hed">2. A-list couple's 'irretrievable breakdown' — sources reveal what really went wrong</div>
+          <div class="sidebar-item-meta"><span class="cmt">▶ 8,744 comments</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#d0d0d0,#b0b0b0)"></div>
+        <div>
+          <div class="sidebar-item-hed">3. England manager axes three big names in surprise World Cup squad announcement</div>
+          <div class="sidebar-item-meta"><span class="cmt">▶ 3,102 comments</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#c8c8c8,#a8a8a8)"></div>
+        <div>
+          <div class="sidebar-item-hed">4. Scientists find daily coffee drinkers have dramatically lower rates of early dementia</div>
+          <div class="sidebar-item-meta"><span class="cmt">▶ 1,893 comments</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#c5c5c5,#a5a5a5)"></div>
+        <div>
+          <div class="sidebar-item-hed">5. Chancellor announces emergency measures as energy bills set to rise 30% in spring</div>
+          <div class="sidebar-item-meta"><span class="cmt">▶ 5,421 comments</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POLL -->
+    <div class="sidebar-module">
+      <div class="sidebar-header red">Daily Poll</div>
+      <div class="poll-body">
+        <div class="poll-q">Do you think Daniel Johns and Jade Thirlwall make a good match?</div>
+        <label class="poll-opt"><input type="radio" name="poll" /> Yes — they'd be amazing together!</label>
+        <label class="poll-opt"><input type="radio" name="poll" /> It's too early to say</label>
+        <label class="poll-opt"><input type="radio" name="poll" /> Probably just friends</label>
+        <label class="poll-opt"><input type="radio" name="poll" /> Not sure who either of them are</label>
+        <button class="poll-vote-btn">Vote Now</button>
+      </div>
+    </div>
+
+    <!-- RELATED -->
+    <div class="sidebar-module">
+      <div class="sidebar-header">Related Articles</div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#bbb,#999)"></div>
+        <div>
+          <div class="sidebar-item-hed">Jade Thirlwall wows Chicago crowd on opening night of North America tour leg</div>
+          <div class="sidebar-item-meta">Yesterday &nbsp;·&nbsp; <span class="cmt">▶ 1,204 comments</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#c2c2c2,#989898)"></div>
+        <div>
+          <div class="sidebar-item-hed">Daniel Johns breaks silence with rare interview: 'I'm the happiest I've been in years'</div>
+          <div class="sidebar-item-meta">3 days ago &nbsp;·&nbsp; <span class="cmt">▶ 4,670 comments</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="sidebar-thumb" style="background:linear-gradient(135deg,#d2d2d2,#ababab)"></div>
+        <div>
+          <div class="sidebar-item-hed">Jade Thirlwall on going solo: 'I had to prove something to myself — and I think I have'</div>
+          <div class="sidebar-item-meta">Last week &nbsp;·&nbsp; <span class="cmt">▶ 2,318 comments</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sidebar-ad">Advertisement</div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Daily Mail</div>
+    <div class="footer-links">
+      <a href="#">Home</a><a href="#">News</a><a href="#">Sport</a><a href="#">Showbiz</a>
+      <a href="#">Femail</a><a href="#">Health</a><a href="#">Science</a><a href="#">Money</a>
+      <a href="#">Travel</a><a href="#">Property</a><a href="#">Video</a>
+      <a href="#">Contact Us</a><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a>
+      <a href="#">Terms &amp; Conditions</a><a href="#">Advertise with Us</a><a href="#">Sitemap</a>
+    </div>
+    <div class="footer-copy">
+      This is a fictional design prototype for demonstration purposes only. All content is entirely fictitious and created solely for layout reference. &copy; 2026 Daily Mail Style Demo.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
